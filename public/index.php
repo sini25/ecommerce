@@ -14,7 +14,7 @@ $conn = $db->getConnection();
 <meta charset="UTF-8">
 <title>Login</title>
 
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
@@ -22,7 +22,7 @@ $conn = $db->getConnection();
 
 <div class="login-box">
     <h1>
-        <img src="assets/logo/Logo.png" style="width:300px; height: 300px; vertical-align:middle;">
+        <img src="assets/logo/Logo.png" style="width:400px; height: 400px; vertical-align:middle;">
     </h1>
     <h2>Welcome Back</h2>
 
@@ -38,7 +38,7 @@ $conn = $db->getConnection();
 
     <div class="links">
         Don’t have an account?
-        <a href="register.php">Sign up</a>
+        <a href="signup.php">Sign up</a>
     </div>
 </div>
 
