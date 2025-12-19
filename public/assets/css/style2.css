@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+     
+}
+
+body {
+    margin: 0 ;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  40px 40px ;
+    font-size: 20px;
+   /* Reduced padding from 80px */
+    height: 70px;
+    background: #ddd; /* Darker professional color */
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+/* 1. The Container (UL) */
+.nav-links {
+    list-style: none;      /* Removes the bullet points */
+    display: flex;         /* Lays the links horizontally */
+    gap: 60px;             /* Adds space between the links */
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. The Link itself (A) */
+.nav-links a {
+    text-decoration: none; /* Removes the underline */
+    color: #94a3b8;        /* A nice soft gray color */
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 0;       /* Vertical padding for a larger click area */
+    transition: all 0.3s ease; /* Makes the color change smooth */
+    position: relative;    /* Required for the "underline" effect below */
+}
+
+/* 3. Hover and Active State */
+.nav-links a:hover,
+.nav-links a.active {
+    color:  #764ba2;        /* Turns white on hover/active */
+}
+
+/* 4. The Underline Effect (Optional but looks great) */
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;           /* Full width underline for the active link */
+    height: 3px;
+    background-color: #3b82f6; /* Modern blue color */
+    border-radius: 2px;
+}
+
+/* ... rest of your nav-links CSS stays the same ... */
+.logout-btn {
+   color:  #764ba2;  
+   text-decoration: none;  
+   font-weight: bold;
+
+   padding: 8px 16px;
+   border: 1px solid #764ba2;
+   border-radius: 4px;
+   transition: 0.3s;
+
+
+}
+
+.logout-btn:hover{
+ background-color: #764ba2;
+ color: white;
+}
+
+.content {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content area */
+}
+
+.product-image {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.product-image  div{
+    
+    color: #000;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.product-card {
+    background: #dadada;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+ 
+}
+
+/* Hover effect */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+
+
+/* Hover effect */
+.product-card:hover {
+    transform: translatey(-6px);
+    box-shadow: 0 22pxpx 35px rgba(0,0,0,0.18);
+}
+
+.add-link {
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    color: #667eea;
+}
+

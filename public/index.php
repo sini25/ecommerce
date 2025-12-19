@@ -30,7 +30,7 @@ $conn = $db->getConnection();
         <div class="error"><?= htmlspecialchars($error) ?></div>
     <?php endif; ?>
 
-    <form method="POST">
+    <form method="POST" action="dashboard.php" >
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Login</button>

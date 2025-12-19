@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
         <input type="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
-        <button type="submit">Login</button>
+        <button type="submit">Signup</button>
     </form>
 
     <div class="links">
